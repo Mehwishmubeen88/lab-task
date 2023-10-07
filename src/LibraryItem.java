@@ -1,27 +1,60 @@
-public class Library {
-    public Library() {
-    }
-    // array initialization and declaration
-    LibraryItem[]Item=new LibraryItem[50]{new LibraryItem("intro to c","paul",2023,true,BOOK)
-            ,new LibraryItem("programming fundamentals","harvey",2015,false,BOOK);};
-    public void additem(LibraryItem item){
+public class LibraryItem{
+    private String title;
+    private String author;
+  private  int year;
+   private boolean isBorrowed;
+   private LibraryItemType itemType;
+    public LibraryItem(String title, String author, int year, LibraryItemType itemType) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.isBorrowed = false;
+        this.itemType = itemType;
 
     }
-    public void borrowitem(LibraryItem item){
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
+    public void setBorrowed(boolean borrowed) {
+        isBorrowed = borrowed;
+    }
+
+    public LibraryItemType getItemType() {
+        return itemType;
+    }
+
+    public void setItemType(LibraryItemType itemType) {
+        this.itemType = itemType;
+    }
+    public void equals(){
 
     }
-    public void returnitem(LibraryItem item){
 
-    }
-    public void displayavailableitems(){
-        for(int i=0;i< Item.length;i++){
-            System.out.println(Item[i]);
-        }
-
-    }
-    public void displayborroweditems(){
-
-    }
 
 }
 

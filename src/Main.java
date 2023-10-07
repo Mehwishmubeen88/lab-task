@@ -3,6 +3,8 @@ public class Main {
     public static void main(String[] args) {
         // Creating a library
         Library lib = new Library();
+        // array initialization and declaration
+       LibraryItem[] 
         // Adding some books by Pakistani authors to the library
         Book book1 = new Book("Moth Smoke", "Mohsin Hamid", 2000, 247);
         Book book2 = new Book("The Reluctant Fundamentalist", "Mohsin Hamid", 2007, 184);
